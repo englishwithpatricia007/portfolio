@@ -35,26 +35,33 @@
             "titulo" => "Meu Portfolio",
             "finalizado" => false,
             "ano" => 2025,
-            "descricao" => "Meu primeiro Portfolio. Escrito em PHP e HTML."
+            "descricao" => "Meu primeiro Portfolio. Escrito em PHP e HTML.",
+            "stack" => ["PHP", "HTML", "CSS"],
         ],
+
         [
             "titulo" => "Lista de Tarefas",
             "finalizado" => true,
             "ano" => 2025,
-            "descricao" => "Lista de Tarefas. Escrito em PHP e HTML."
+            "descricao" => "Lista de Tarefas. Escrito em PHP e HTML.",
+            "stack" => ["PHP", "HTML", "CSS"],
         ],
+
         [
             "titulo" => "Controle de Leitura de Livros",
             "finalizado" => true,
             "ano" => 2024,
-            "descricao" => "Lista de livros. Escrito em PHP e HTML."
+            "descricao" => "Lista de livros. Escrito em PHP e HTML.",
+            "stack" => ["PHP", "HTML", "CSS"],
         ],
+
         [
             "titulo" => "Mais um projeto",
             "finalizado" => false,
             "ano" => 2026,
-            "descricao" => "Mais um projeto. Escrito em PHP e HTML."
-        ],
+            "descricao" => "Mais um projeto. Escrito em PHP e HTML.",
+            "stack" => ["PHP", "HTML", "CSS"],
+     ],
     ];
 
     function verificarSeEstaFinalizado($p)
