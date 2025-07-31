@@ -1,3 +1,12 @@
+<?php 
+    $itens = [
+        ['href' => 'https://www.youtube.com/@englishwithpatricia007',  'src' => "/img/youtube.png", 'alt' => 'Youtube'],
+        ['href' => 'https://www.linkedin.com/in/poulainpatricia',  'src' => "/img/linkedin.png", 'alt' => 'LinkedIn'],
+        ['href' => 'https://x.com/pattypoulain',  'src' => "/img/twitter.png", 'alt' => 'X'],
+    ]
+?>
+
+
 <section class="flex justify-between gap-x-3 ">
     <div class="w-2/3">
         <h1 class="text-3xl font-bold">Oi, meu nome é Patrícia</h1>
@@ -11,24 +20,13 @@
             who I am
         </p>
         <ul class="flex gap-x-3 mt-3">
+            <?php foreach ($itens as $item): ?>
             <li>
-                <a href="https://www.youtube.com/@englishwithpatricia007" target="_blank" class="hover:underline">
-                    <img class="h-8 hover:animate-bounce" src="/img/youtube.png" alt="Youtube">
+                <a href="<?=$item['href']?>" target="_blank" class="hover:underline">
+                    <img class="h-8 hover:animate-bounce" src="<?=$item['src']?>" alt="<?=$item['alt']?>">
                 </a>
             </li>
-
-            <li>
-                <a href="https://www.linkedin.com/in/poulainpatricia" target="_blank" class="hover:underline">
-                    <img class="h-8 hover:animate-bounce" src="/img/linkedin.png" alt="LinkedIn">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://x.com/pattypoulain" target="_blank  class=" hover:underline">
-                    <img class="h-8 hover:animate-bounce" src="/img/twitter.png" alt="twitter">
-                </a>
-            </li>
-            <!-- links das redes sociais-->
+            <?php endforeach; ?>
         </ul>
     </div>
     <div class="w-1/3 flex items-center justify-center">
